@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: d3m-example-pod
+spec:
+  restartPolicy: Never
+  containers:
+  - name: d3m-example
+    image: tworavens/summer:latest
+    resources:
+      requests:
+        memory: 512Mi
+        cpu: 1
+  imagePullSecrets:
+  - name: regcred
+  #volumes:
+  #- name: input-data
+  #  hostPath:
+  #    path: /opt/datasets/seed_datasets_current/
+  #    type: Directory
+  #- name: output-data
+  #  persistentVolumeClaim:
+  #    claimName: output-pv-claim
