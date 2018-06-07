@@ -15,3 +15,8 @@ docker push tworavens/summer:latest
 kubectl apply -f example2.yml
 kubectl delete -f example2.yml
 ```
+
+```
+kubectl apply -f raven-test.yml
+kubectl delete -f raven-test.yml
+```
