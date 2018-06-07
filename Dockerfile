@@ -9,4 +9,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD ["/usr/bin/python", "/var/webapps/summer/app.py"]
+CMD ["python", "/var/webapps/summer/app.py"]

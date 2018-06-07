@@ -7,6 +7,10 @@ spec:
   containers:
   - name: d3m-example
     image: tworavens/summer:latest
+    ports:
+    - containerPort: 8080
+      name: http
+      protocol: TCP
     resources:
       requests:
         memory: 512Mi
