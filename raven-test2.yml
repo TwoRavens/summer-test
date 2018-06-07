@@ -39,7 +39,7 @@ spec:
   # 1 of 3: Ravens nginx
   # -------------------------
   - name: ravens-nginx
-    image: ravens-nginx:stable
+    image: tworavens/ravens-nginx:latest
     resources:
       requests:
         memory: 256Mi
