@@ -38,6 +38,10 @@ spec:
   - name: ta3-main
     image: tworavens/ravens-main:latest
     command: ["gce_start.sh"]
+    resources:
+      requests:
+        memory: 512Mi
+        cpu: 1
     ports:
       - containerPort: 8080
         name: http
@@ -82,6 +86,10 @@ spec:
   # -------------------------
   - name: rook-service
     image: tworavens/ravens-r-service:latest
+    resources:
+      requests:
+        memory: 512Mi
+        cpu: 1
     # same mounts as ta3-main and ta2-main
     volumeMounts:
       # ravens volume shared w/ ta3-main
