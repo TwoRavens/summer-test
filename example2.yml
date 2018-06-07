@@ -10,6 +10,7 @@ metadata:
 spec:
   # NodePort type allows to expose service outside the cluster
   type: LoadBalancer
+  loadBalancerIP: 10.108.5.2  # test IP
   selector:
     k8s-app: raven-example-pod
   ports:
