@@ -12,6 +12,6 @@ docker push tworavens/summer:latest
 ### k8s
 
 ```
-kubectl apply -f example.yaml
-kubectl delete -f example.yaml
+kubectl apply -f example2.yml
+kubectl delete -f example2.yml
 ```
