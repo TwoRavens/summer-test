@@ -7,7 +7,6 @@ metadata:
     kubernetes.io/cluster-service: 'true'
     kubernetes.io/name: monitoring-raven
   name: raven-example-web
-  namespace: kube-system
 spec:
   # NodePort type allows to expose service outside the cluster
   type: LoadBalancer
